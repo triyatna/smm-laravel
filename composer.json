@@ -1,0 +1,45 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "triyatna/smm-laravel",
+    "description": "Laravel package for interacting with the SMM API.",
+    "keywords": [
+        "laravel",
+        "smm",
+        "sosial media",
+        "follower",
+        "suntik"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/triyatna/smm-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Triyatna",
+            "role": "Developer",
+            "email": "triyatna.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.0|^12.0",
+        "illuminate/http": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Triyatna\\SmmLaravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Triyatna\\SmmLaravel\\SmmServiceProvider"
+            ],
+            "aliases": {
+                "Smm": "Triyatna\\SmmLaravel\\Facades\\Smm"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
